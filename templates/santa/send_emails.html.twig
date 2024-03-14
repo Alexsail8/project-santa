@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Карусель Тайного Санты{% endblock %}
+
+{% block body %}
+    <h1>Карусель Тайного Санты</h1>
+
+    {% for flash_message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
+
+{#    {{ form_start(form) }}#}
+{#    <button type="submit" class="btn btn-primary">Отправить письма</button>#}
+{#    {{ form_end(form) }}#}
+{% endblock %}
+

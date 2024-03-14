@@ -1,0 +1,10 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+#santa_send_emails:
+#    path: /send-emails
+#    controller: App\Controller\SantaController::sendEmails

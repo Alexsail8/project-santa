@@ -1,0 +1,27 @@
+{% block body %}
+    <h1>Выбор Тайного Санты</h1>
+
+    {% for flash_message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ flash_message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+    {% for flash_message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ flash_message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+<form method="post" action="{{ path('send_email') }}">
+    <input type="checkbox" name="santaRun" hidden checked />
+    <button type="submit">Отправить</button>
+</form>
+
+{% endblock %}
